@@ -1,0 +1,89 @@
+ * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333333;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .form-group input {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+        }
+
+        .form-group input:focus {
+            outline: none;
+            border-color: #66ccff;
+        }
+
+        .form-group select {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+        }
+
+        .form-group select:focus {
+            outline: none;
+            border-color: #66ccff;
+        }
+
+        .form-group input[type="checkbox"] {
+            display: inline-block;
+            width: auto;
+        }
+
+        .form-group input[type="submit"] {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #66ccff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .form-group input[type="submit"]:hover {
+            background-color: #3399ff;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                width: 100%;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                border-radius: 0;
+                box-shadow: none;
+            }
+        }     

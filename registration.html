@@ -1,0 +1,70 @@
+<!doctype html>
+  <html>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO friendly meta tags -->
+    <meta name="description" content="A shopping website that offers a variety of products at affordable prices.">
+    <meta name="keywords" content="shopping, online, products, deals, discounts">
+    <title>registration page </title>
+    <link rel="stylesheet" href="registration.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Register for Shopping</h1>
+      <form id="register-form" onsubmit="return validateForm()">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+          <span id="name-error" style="color:red;display:none;">Please enter a valid name</span>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          <span id="email-error" style="color:red;display:none;">Please enter a valid email</span>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Enter your password" required>
+          <span id="password-error" style="color:red;display:none;">Please enter a valid password</span>
+        </div>
+
+        <div class="form-group">
+          <label for="confirm-password">Confirm Password</label>
+          <input type="password" id="confirm-password" name="confirm-password" placeholder="Re-enter your password" required>
+          <span id="confirm-password-error" style="color:red;display:none;">Passwords do not match</span>
+        </div>
+
+        <div class="form-group">
+          <label for="gender">Gender</label>
+          <select id="gender" name="gender">
+            <option value="">Select your gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="terms">Terms and Conditions</label>
+          <input type="checkbox" id="terms" name="terms" required> I agree to the terms and conditions
+        </div>
+
+        <div class="form-group">
+          <input type="submit" value="Register">
+        </div>
+
+        <!-- This is a hidden element to show a success message after registration -->
+        <div id="success-message" style="display:none;">
+          <p>Thank you for registering! You can now start shopping.</p>
+        </div>
+      </form>
+    </div>
+    <script src="registration.js" </script>
+      </body> 
+      </html>
+     
